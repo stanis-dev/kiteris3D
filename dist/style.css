@@ -22,6 +22,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: white;
   line-height: 1.4;
+  /* HERO SECTION */
 }
 
 body .navbar-top {
@@ -36,6 +37,9 @@ body .navbar-top {
   z-index: 9999;
   background-color: white;
   width: 100%;
+  -webkit-box-shadow: 0 20px 40px rgba(40, 37, 96, 0.6);
+          box-shadow: 0 20px 40px rgba(40, 37, 96, 0.6);
+  /* Mobile Dropdown Menu Styles */
 }
 
 body .navbar-top .logo-link .logo {
@@ -45,10 +49,37 @@ body .navbar-top .logo-link .logo {
 
 body .navbar-top .navbar-menu {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* Mobile Menu Burger Icon Styles */
   -webkit-transition: all 2.5s ease-in-out;
   transition: all 2.5s ease-in-out;
-  /* Mobile Dropdown Menu Styles */
+}
+
+body .navbar-top .navbar-menu .desktop-menu {
+  display: none;
+}
+
+body .navbar-top .navbar-menu .desktop-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .navbar-top .navbar-menu .desktop-menu ul li {
+  margin-right: 1.3rem;
+}
+
+body .navbar-top .navbar-menu .desktop-menu ul li a {
+  color: #282560;
+  font-weight: 600;
 }
 
 body .navbar-top .navbar-menu .menu-expand-btn {
@@ -119,6 +150,23 @@ body .navbar-top .navbar-menu .menu-expand-btn.open .burger::after {
           transform: rotate(-45deg) translate(35px, 35px);
 }
 
+body .navbar-top .navbar-menu .linked-in-logo {
+  display: none;
+  width: 40px;
+  height: 30px;
+  border-left: 1px #282560 solid;
+  margin-left: 0.6rem;
+}
+
+body .navbar-top .navbar-menu .linked-in-logo .linked-in {
+  font-size: 1.5rem;
+  padding-left: 1.1rem;
+}
+
+body .navbar-top .navbar-menu .linked-in-logo .linked-in i {
+  color: #282560;
+}
+
 body .navbar-top .collapse-toggle {
   height: 0;
   overflow: hidden;
@@ -133,7 +181,7 @@ body .navbar-top .collapse-toggle {
 }
 
 body .navbar-top .collapse-toggle.open {
-  height: 470px;
+  height: 370px;
   overflow: hidden;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -142,6 +190,7 @@ body .navbar-top .collapse-toggle.open {
 body .navbar-top .collapse-toggle ul {
   text-align: right;
   font-size: 0.9rem;
+  /* MOBILE SUB-MENU TOGGLE */
 }
 
 body .navbar-top .collapse-toggle ul.submenu-collapse-toggle {
@@ -149,11 +198,15 @@ body .navbar-top .collapse-toggle ul.submenu-collapse-toggle {
   overflow: hidden;
   width: 109%;
   background: #232323;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 body .navbar-top .collapse-toggle ul.submenu-collapse-toggle.open {
   height: 99px;
   overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 body .navbar-top .collapse-toggle ul.submenu-collapse-toggle li {
@@ -164,7 +217,7 @@ body .navbar-top .collapse-toggle ul.submenu-collapse-toggle li {
 body .navbar-top .collapse-toggle ul li {
   line-height: 2.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  padding-right: 30px;
+  padding-right: 6vw;
 }
 
 body .hero {
@@ -181,6 +234,7 @@ body .hero {
           align-items: center;
   padding-top: 5.2rem;
   position: relative;
+  /* 3D CANVAS */
 }
 
 body .hero #renderCanvas {
@@ -226,5 +280,21 @@ body .hero .action-call {
 body .section-2 {
   min-height: 70vh;
   background-color: yellowgreen;
+}
+
+/* TABLET MEDIA QUERIES */
+@media only screen and (min-width: 700px) {
+  body .navbar-top .navbar-menu .linked-in-logo {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body .navbar-top .navbar-menu .menu-expand-btn {
+    display: none;
+  }
+  body .navbar-top .navbar-menu .desktop-menu {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

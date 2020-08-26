@@ -32,6 +32,7 @@ body {
     z-index: 9999;
     background-color: white;
     width: 100%;
+    box-shadow: 0 20px 40px rgba($color-primary, 0.6);
 
     .logo-link {
       .logo {
@@ -42,6 +43,25 @@ body {
 
     .navbar-menu {
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .desktop-menu {
+        display: none;
+        ul {
+          display: flex;
+
+          li {
+            margin-right: 1.3rem;
+            a {
+              color: $color-primary;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
       /* Mobile Menu Burger Icon Styles */
       .menu-expand-btn {
         position: relative;
@@ -97,8 +117,25 @@ body {
       }
       transition: all 2.5s ease-in-out;
 
-      /* Mobile Dropdown Menu Styles */
+      .linked-in-logo {
+        display: none;
+        width: 40px;
+        height: 30px;
+        border-left: 1px $color-primary solid;
+        margin-left: 0.6rem;
+
+        .linked-in {
+          font-size: 1.5rem;
+          padding-left: 1.1rem;
+
+          i {
+            color: $color-primary;
+          }
+        }
+      }
     }
+
+    /* Mobile Dropdown Menu Styles */
     .collapse-toggle {
       height: 0;
       overflow: hidden;
@@ -112,9 +149,8 @@ body {
       transition-duration: 0.5s;
 
       &.open {
-        height: 470px;
+        height: 370px;
         overflow: hidden;
-
         -moz-transition-duration: 1s;
         transition-duration: 0.5s;
       }
@@ -123,15 +159,20 @@ body {
         text-align: right;
         font-size: 0.9rem;
 
+        /* MOBILE SUB-MENU TOGGLE */
         &.submenu-collapse-toggle {
           height: 0;
           overflow: hidden;
           width: 109%;
           background: #232323;
+          -moz-transition-duration: 1s;
+          transition-duration: 0.5s;
 
           &.open {
             height: 99px;
             overflow: hidden;
+            -moz-transition-duration: 1s;
+            transition-duration: 0.5s;
           }
 
           & li {
@@ -143,11 +184,13 @@ body {
         li {
           line-height: 2.5rem;
           border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-          padding-right: 30px;
+          padding-right: 6vw;
         }
       }
     }
   }
+
+  /* HERO SECTION */
 
   .hero {
     height: 100vh;
@@ -157,6 +200,7 @@ body {
     padding-top: 5.2rem;
     position: relative;
 
+    /* 3D CANVAS */
     #renderCanvas {
       width: 100%;
       height: 100%;
@@ -200,5 +244,34 @@ body {
   .section-2 {
     min-height: 70vh;
     background-color: yellowgreen;
+  }
+}
+
+/* TABLET MEDIA QUERIES */
+
+@media only screen and (min-width: 700px) {
+  body {
+    .navbar-top {
+      .navbar-menu {
+        .linked-in-logo {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    .navbar-top {
+      .navbar-menu {
+        .menu-expand-btn {
+          display: none;
+        }
+        .desktop-menu {
+          display: block;
+        }
+      }
+    }
   }
 }
