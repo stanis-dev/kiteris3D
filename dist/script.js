@@ -1,6 +1,10 @@
-const menuBtn = document.querySelector('.menu-expand-btn');
-const dropdownMenu = document.querySelector('.collapse-toggle');
-let = menuOpen = false;
+const menuBtn = document.querySelector('.toggler');
+const dropdownMenu = document.querySelector('.toggled');
+let menuOpen = false;
+
+const subMenuBtn = document.querySelector('.toggler');
+const dropdownMenu = document.querySelector('.toggled');
+let menuOpen = false;
 
 menuBtn.addEventListener('click', () => {
   if (!menuOpen) {

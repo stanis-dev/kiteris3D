@@ -34,17 +34,23 @@
       /></a>
 
       <div class="navbar-menu">
-        <div class="menu-expand-btn">
+        <div class="menu-expand-btn toggler">
           <div class="burger"></div>
         </div>
       </div>
-      <div class="collapse-toggle open">
+      <div class="collapse-toggle toggled">
         <ul>
           <li><a href="#">empresa</a></li>
-          <li>
+          <li class="toggler">
             <a href="#"
               >servicios <i class="fas fa-angle-down dropdown-toggle"></i
             ></a>
+
+            <ul class="submenu-collapse-toggle toggled">
+              <li><a href="#">Acompañamiento estratégico y organizativo</a></li>
+              <li><a href="#">Servicios tecnológicos</a></li>
+              <li><a href="#">Gestión y optimización de proyectos</a></li>
+            </ul>
           </li>
           <li><a href="#">kiteris data</a></li>
           <li><a href="#">kiteris 3d</a></li>
@@ -75,7 +81,7 @@
 
     <!-- HERO - IMAGE SECTION -->
     <section class="hero">
-      <canvas class="canvas" id="renderCanvas"></canvas>
+      <canvas class="canvas" id="renderCanvas"> </canvas>
       <h4 class="hero-copy">
         Expertos en soluciones de Visualización 3D en tu Web
       </h4>

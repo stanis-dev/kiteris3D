@@ -22,6 +22,7 @@ ul {
 body {
   font-family: 'Roboto', sans-serif;
   color: white;
+  line-height: 1.4;
 
   .navbar-top {
     padding: 0 4%;
@@ -104,14 +105,14 @@ body {
       z-index: 20;
       position: absolute;
       background-color: rgba(23, 23, 23, 0.95);
-      min-width: 110vw;
-      right: -20px;
-      top: 85px;
+      min-width: 100vw;
+      right: 0px;
+      top: 83px;
       -moz-transition-duration: 1s;
       transition-duration: 0.5s;
 
       &.open {
-        height: 370px;
+        height: 470px;
         overflow: hidden;
 
         -moz-transition-duration: 1s;
@@ -120,48 +121,66 @@ body {
 
       ul {
         text-align: right;
-
         font-size: 0.9rem;
+
+        &.submenu-collapse-toggle {
+          height: 0;
+          overflow: hidden;
+          width: 109%;
+          background: #232323;
+
+          &.open {
+            height: 99px;
+            overflow: hidden;
+          }
+
+          & li {
+            font-size: 0.83rem;
+            line-height: 2rem;
+          }
+        }
+
         li {
           line-height: 2.5rem;
           border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-
-          a {
-            padding-right: 50px;
-          }
+          padding-right: 30px;
         }
       }
     }
   }
 
   .hero {
-    background-image: url('./src/img/car-full.PNG');
-    background-position: -280px center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
-    /* padding-top: 100px; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding: 8rem 2rem 2.3rem;
+    padding-top: 5.2rem;
+    position: relative;
+
+    #renderCanvas {
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background: linear-gradient(90deg, black, black);
+    }
 
     .hero-copy {
+      position: absolute;
       font-family: 'Roboto', sans-serif;
       width: 65%;
+      max-width: 500px;
       font-size: 1.8rem;
       text-shadow: 0 20px 30px rgba(23, 23, 23, 0.95);
       font-weight: 700;
       letter-spacing: 0.06rem;
       text-transform: uppercase;
-      align-self: flex-start;
-      max-width: 350px;
       margin-left: 5vw;
       margin-top: 5vw;
+      top: 20%;
     }
 
     .action-call {
+      position: absolute;
       padding: 1rem 1.2rem;
       border-radius: 15px;
       border: none;
@@ -174,7 +193,7 @@ body {
       cursor: pointer;
       font-weight: 300;
       letter-spacing: 3px;
-      justify-self: center;
+      bottom: 10%;
     }
   }
 

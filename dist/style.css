@@ -21,6 +21,7 @@ ul {
 body {
   font-family: 'Roboto', sans-serif;
   color: white;
+  line-height: 1.4;
 }
 
 body .navbar-top {
@@ -124,15 +125,15 @@ body .navbar-top .collapse-toggle {
   z-index: 20;
   position: absolute;
   background-color: rgba(23, 23, 23, 0.95);
-  min-width: 110vw;
-  right: -20px;
-  top: 85px;
+  min-width: 100vw;
+  right: 0px;
+  top: 83px;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
 
 body .navbar-top .collapse-toggle.open {
-  height: 370px;
+  height: 470px;
   overflow: hidden;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -143,22 +144,31 @@ body .navbar-top .collapse-toggle ul {
   font-size: 0.9rem;
 }
 
+body .navbar-top .collapse-toggle ul.submenu-collapse-toggle {
+  height: 0;
+  overflow: hidden;
+  width: 109%;
+  background: #232323;
+}
+
+body .navbar-top .collapse-toggle ul.submenu-collapse-toggle.open {
+  height: 99px;
+  overflow: hidden;
+}
+
+body .navbar-top .collapse-toggle ul.submenu-collapse-toggle li {
+  font-size: 0.83rem;
+  line-height: 2rem;
+}
+
 body .navbar-top .collapse-toggle ul li {
   line-height: 2.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-body .navbar-top .collapse-toggle ul li a {
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
 body .hero {
-  background-image: url("./src/img/car-full.PNG");
-  background-position: -280px center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
-  /* padding-top: 100px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,31 +176,38 @@ body .hero {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 8rem 2rem 2.3rem;
+  padding-top: 5.2rem;
+  position: relative;
+}
+
+body .hero #renderCanvas {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(black));
+  background: linear-gradient(90deg, black, black);
 }
 
 body .hero .hero-copy {
+  position: absolute;
   font-family: 'Roboto', sans-serif;
   width: 65%;
+  max-width: 500px;
   font-size: 1.8rem;
   text-shadow: 0 20px 30px rgba(23, 23, 23, 0.95);
   font-weight: 700;
   letter-spacing: 0.06rem;
   text-transform: uppercase;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  max-width: 350px;
   margin-left: 5vw;
   margin-top: 5vw;
+  top: 20%;
 }
 
 body .hero .action-call {
+  position: absolute;
   padding: 1rem 1.2rem;
   border-radius: 15px;
   border: none;
@@ -204,8 +221,7 @@ body .hero .action-call {
   cursor: pointer;
   font-weight: 300;
   letter-spacing: 3px;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  bottom: 10%;
 }
 
 body .section-2 {
