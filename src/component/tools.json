@@ -1,0 +1,9 @@
+{
+ "dinnerOut": true,
+ "env": "test",
+ "reflection":{
+     "geometriesToReflection":"cuerpo",
+     "scale": 512
+ }
+
+}

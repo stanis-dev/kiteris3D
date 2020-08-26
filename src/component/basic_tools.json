@@ -1,0 +1,63 @@
+{
+ "env": "cuadro_flecha",
+ "objToChangeColor": "picture",
+ "materials": [
+   {
+     "name": "cueroMarron",
+     "textureAlbedo": "",
+     "textureNormal": "",
+     "textureSpecular": ""
+   },{
+     "name": "cueroVerde",
+     "textureAlbedo": "",
+     "textureNormal": "",
+     "textureSpecular": ""
+   },{
+     "name": "cueroRojo",
+     "textureAlbedo": "",
+     "textureNormal": "",
+     "textureSpecular": ""
+   }
+ ],
+ "reflection": {
+   "name": "reflectionProbe",
+   "scale": 512,
+   "geometriesToReflection": "picture"
+ },
+ "objInScene": [
+   {
+     "name": "gafasAviador",
+     "urlImage": "environments/armor-front.jpg",
+     "geoIncluded": ["aviator_glasses:Mesh","glasses","Hotspot_1"]
+   },{
+     "name": "reloj",
+     "urlImage": "environments/armor-front.jpg",
+     "geoIncluded": ["reloj"]
+   },{
+     "name": "chubasquero",
+     "urlImage": "environments/armor-front.jpg",
+     "geoIncluded": []
+   },{
+     "name": "gafas",
+     "urlImage": "environments/armor-front.jpg",
+     "geoIncluded": []
+   },{
+     "name": "otraCosa",
+     "urlImage": "environments/armor-front.jpg",
+     "geoIncluded": []
+   }
+ ],
+ "texturesToChange": [{
+      "name": "text1",
+      "urlImage": "environments/textures/Fiberglass0003.jpg"
+   },{
+      "name": "text2",
+      "urlImage":"environments/textures/Fiberglass0004.jpg"
+   },{
+      "name": "text3",
+      "urlImage":"environments/textures/Fiberglass0013.jpg"
+   },{
+      "name": "text4",
+      "urlImage":"environments/textures/MetalPainted0204.jpg"
+   }]
+}
