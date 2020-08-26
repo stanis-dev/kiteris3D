@@ -112,9 +112,8 @@ body {
       transition-duration: 0.5s;
 
       &.open {
-        height: 470px;
+        height: 370px;
         overflow: hidden;
-
         -moz-transition-duration: 1s;
         transition-duration: 0.5s;
       }
@@ -128,10 +127,14 @@ body {
           overflow: hidden;
           width: 109%;
           background: #232323;
+          -moz-transition-duration: 1s;
+          transition-duration: 0.5s;
 
           &.open {
             height: 99px;
             overflow: hidden;
+            -moz-transition-duration: 1s;
+            transition-duration: 0.5s;
           }
 
           & li {
@@ -149,6 +152,8 @@ body {
     }
   }
 
+  /* HERO SECTION */
+
   .hero {
     height: 100vh;
     display: flex;
@@ -157,6 +162,7 @@ body {
     padding-top: 5.2rem;
     position: relative;
 
+    /* 3D CANVAS */
     #renderCanvas {
       width: 100%;
       height: 100%;

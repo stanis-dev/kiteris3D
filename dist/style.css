@@ -22,6 +22,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: white;
   line-height: 1.4;
+  /* HERO SECTION */
 }
 
 body .navbar-top {
@@ -133,7 +134,7 @@ body .navbar-top .collapse-toggle {
 }
 
 body .navbar-top .collapse-toggle.open {
-  height: 470px;
+  height: 370px;
   overflow: hidden;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -149,11 +150,15 @@ body .navbar-top .collapse-toggle ul.submenu-collapse-toggle {
   overflow: hidden;
   width: 109%;
   background: #232323;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 body .navbar-top .collapse-toggle ul.submenu-collapse-toggle.open {
   height: 99px;
   overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 body .navbar-top .collapse-toggle ul.submenu-collapse-toggle li {
@@ -181,6 +186,7 @@ body .hero {
           align-items: center;
   padding-top: 5.2rem;
   position: relative;
+  /* 3D CANVAS */
 }
 
 body .hero #renderCanvas {
