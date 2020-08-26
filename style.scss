@@ -1,0 +1,185 @@
+$color-primary: #282560;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.4;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+
+  .navbar-top {
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    width: 100%;
+
+    .logo-link {
+      .logo {
+        height: 70px;
+        margin-top: 7px;
+      }
+    }
+
+    .navbar-menu {
+      position: relative;
+      /* Mobile Menu Burger Icon Styles */
+      .menu-expand-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 80px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        .burger {
+          width: 30px;
+          height: 3px;
+          border-radius: 5px;
+          background: $color-primary;
+          transition: all 0.5s ease-in-out;
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+
+          &::before,
+          &::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            transition: all 0.5s ease-in-out;
+            background: $color-primary;
+          }
+
+          &::before {
+            transform: translateY(-10px);
+          }
+
+          &::after {
+            transform: translateY(10px);
+          }
+        }
+
+        /* BURGER ANIMATION */
+        &.open .burger {
+          transform: translateX(-50px);
+          background: transparent;
+          box-shadow: none;
+
+          &::before {
+            transform: rotate(45deg) translate(35px, -35px);
+          }
+
+          &::after {
+            transform: rotate(-45deg) translate(35px, 35px);
+          }
+        }
+      }
+      transition: all 2.5s ease-in-out;
+
+      /* Mobile Dropdown Menu Styles */
+    }
+    .collapse-toggle {
+      height: 0;
+      overflow: hidden;
+      z-index: 20;
+      position: absolute;
+      background-color: rgba(23, 23, 23, 0.95);
+      min-width: 110vw;
+      right: -20px;
+      top: 85px;
+      -moz-transition-duration: 1s;
+      transition-duration: 0.5s;
+
+      &.open {
+        height: 370px;
+        overflow: hidden;
+
+        -moz-transition-duration: 1s;
+        transition-duration: 0.5s;
+      }
+
+      ul {
+        text-align: right;
+
+        font-size: 0.9rem;
+        li {
+          line-height: 2.5rem;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+          a {
+            padding-right: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .hero {
+    background-image: url('./src/img/car-full.PNG');
+    background-position: -280px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* padding-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 2rem 2.3rem;
+
+    .hero-copy {
+      font-family: 'Roboto', sans-serif;
+      width: 65%;
+      font-size: 1.8rem;
+      text-shadow: 0 20px 30px rgba(23, 23, 23, 0.95);
+      font-weight: 700;
+      letter-spacing: 0.06rem;
+      text-transform: uppercase;
+      align-self: flex-start;
+      max-width: 350px;
+      margin-left: 5vw;
+      margin-top: 5vw;
+    }
+
+    .action-call {
+      padding: 1rem 1.2rem;
+      border-radius: 15px;
+      border: none;
+      background-color: $color-primary;
+      width: 250px;
+      color: white;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      box-shadow: 0 20px 40px rgba(23, 23, 23, 0.95);
+      cursor: pointer;
+      font-weight: 300;
+      letter-spacing: 3px;
+      justify-self: center;
+    }
+  }
+
+  .section-2 {
+    min-height: 70vh;
+    background-color: yellowgreen;
+  }
+}
