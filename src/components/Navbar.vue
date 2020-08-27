@@ -36,8 +36,8 @@
           </li>
         </ul>
       </div>
-      <div class="menu-expand-btn">
-        <div class="burger"></div>
+      <div @click="toggleMobileMenu()" class="menu-expand-btn">
+        <div :class="{ open: mobileMenuIsOpen }" class="burger"></div>
       </div>
       <div class="linked-in-logo">
         <a
@@ -48,15 +48,19 @@
         ></a>
       </div>
     </div>
-    <div class="collapse-toggle">
+    <div
+      :style="{ height: mobileMenuHeight }"
+      :class="{ open: mobileMenuIsOpen }"
+      class="collapse-toggle"
+    >
       <ul>
         <li><a href="#">empresa</a></li>
-        <li class="">
-          <a href="#" class="sub-menu-expand-btn"
+        <li>
+          <a href="#" class="sub-menu-expand-btn" @click="toggleSubMenu()"
             >servicios <i class="fas fa-angle-down"></i
           ></a>
 
-          <ul class="submenu-collapse-toggle">
+          <ul :class="{ open: subMenuIsOpen }" class="submenu-collapse-toggle">
             <li><a href="#">Acompañamiento estratégico y organizativo</a></li>
             <li><a href="#">Servicios tecnológicos</a></li>
             <li><a href="#">Gestión y optimización de proyectos</a></li>
@@ -93,6 +97,34 @@
 <script>
 export default {
   name: 'Navbar',
+  data() {
+    return {
+      mobileMenuIsOpen: false,
+      subMenuIsOpen: false,
+      mobileMenuHeight: '0px',
+    };
+  },
+  methods: {
+    toggleMobileMenu() {
+      if (this.mobileMenuIsOpen) {
+        this.mobileMenuIsOpen = false;
+        this.mobileMenuHeight = '0px';
+      } else {
+        this.mobileMenuIsOpen = true;
+        this.mobileMenuHeight = '370px';
+      }
+    },
+    toggleSubMenu() {
+      if (this.subMenuIsOpen) {
+        this.subMenuIsOpen = false;
+        this.mobileMenuHeight = '370px';
+      } else {
+        this.subMenuIsOpen = true;
+        this.mobileMenuHeight = '470px';
+      }
+    },
+  },
+  watch: {},
 };
 </script>
 
@@ -172,20 +204,20 @@ $color-primary: #282560;
         &::after {
           transform: translateY(10px);
         }
-      }
 
-      /* BURGER ANIMATION */
-      &.open .burger {
-        transform: translateX(-50px);
-        background: transparent;
-        box-shadow: none;
+        /* BURGER ANIMATION */
+        &.open {
+          transform: translateX(-50px);
+          background: transparent;
+          box-shadow: none;
 
-        &::before {
-          transform: rotate(45deg) translate(35px, -35px);
-        }
+          &::before {
+            transform: rotate(45deg) translate(35px, -35px);
+          }
 
-        &::after {
-          transform: rotate(-45deg) translate(35px, 35px);
+          &::after {
+            transform: rotate(-45deg) translate(35px, 35px);
+          }
         }
       }
     }
