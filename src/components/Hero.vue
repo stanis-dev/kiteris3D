@@ -1,0 +1,67 @@
+<template>
+  <section class="hero">
+    <canvas class="canvas" id="renderCanvas"> </canvas>
+    <h4 class="hero-copy">
+      Expertos en soluciones de Visualización 3D en tu Web
+    </h4>
+    <button class="action-call">Ver demos</button>
+  </section>
+</template>
+
+<script>
+export default {
+  name: 'Hero',
+};
+</script>
+
+<style lang="scss">
+$color-primary: #282560;
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5.2rem;
+  position: relative;
+
+  /* 3D CANVAS */
+  #renderCanvas {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(90deg, black, black);
+  }
+
+  .hero-copy {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    width: 65%;
+    max-width: 500px;
+    font-size: 1.8rem;
+    text-shadow: 0 20px 30px rgba(23, 23, 23, 0.95);
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    top: 20%;
+  }
+
+  .action-call {
+    position: absolute;
+    padding: 1rem 1.2rem;
+    border-radius: 15px;
+    border: none;
+    background-color: $color-primary;
+    width: 250px;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    box-shadow: 0 20px 40px rgba(23, 23, 23, 0.95);
+    cursor: pointer;
+    font-weight: 300;
+    letter-spacing: 3px;
+    bottom: 10%;
+  }
+}
+</style>
