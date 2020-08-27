@@ -1,24 +1,16 @@
-# kiteris3d-vuetified
+# kiteris3d
 
-## Project setup
-```
-npm install
-```
+## Arrancar el proyecto
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
+1. npm install
+2. npm run serve
 ```
 
-### Compiles and minifies for production
+## Deploy a Heroky - automatizado
+
+### Para compilar production build
+
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
