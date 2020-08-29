@@ -101,31 +101,31 @@ export default {
     return {
       mobileMenuIsOpen: false,
       subMenuIsOpen: false,
-      mobileMenuHeight: '0px',
-    };
+      mobileMenuHeight: '0px'
+    }
   },
   methods: {
     toggleMobileMenu() {
       if (this.mobileMenuIsOpen) {
-        this.mobileMenuIsOpen = false;
-        this.mobileMenuHeight = '0px';
+        this.mobileMenuIsOpen = false
+        this.mobileMenuHeight = '0px'
       } else {
-        this.mobileMenuIsOpen = true;
-        this.mobileMenuHeight = '370px';
+        this.mobileMenuIsOpen = true
+        this.mobileMenuHeight = '370px'
       }
     },
     toggleSubMenu() {
       if (this.subMenuIsOpen) {
-        this.subMenuIsOpen = false;
-        this.mobileMenuHeight = '370px';
+        this.subMenuIsOpen = false
+        this.mobileMenuHeight = '370px'
       } else {
-        this.subMenuIsOpen = true;
-        this.mobileMenuHeight = '470px';
+        this.subMenuIsOpen = true
+        this.mobileMenuHeight = '470px'
       }
-    },
+    }
   },
-  watch: {},
-};
+  watch: {}
+}
 </script>
 
 <style lang="scss">
