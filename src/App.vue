@@ -1,8 +1,9 @@
 <template>
   <div class="app">
-    <Navbar></Navbar>
-    <Hero></Hero>
+    <Navbar />
+    <Hero />
     <section class="section-2"><h3>Hello!</h3></section>
+    <Footer />
   </div>
 </template>
 
@@ -10,11 +11,13 @@
 import inCube from './babylonjs/inCube';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Footer from './components/Footer';
 
 export default {
   components: {
     Navbar,
     Hero,
+    Footer,
   },
   mounted() {
     const inCubeS = new inCube();

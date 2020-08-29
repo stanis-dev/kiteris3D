@@ -56,7 +56,7 @@
       <ul>
         <li><a href="#">empresa</a></li>
         <li>
-          <a href="#" class="sub-menu-expand-btn" @click="toggleSubMenu()"
+          <a class="sub-menu-expand-btn" @click="toggleSubMenu()"
             >servicios <i class="fas fa-angle-down"></i
           ></a>
 
@@ -160,6 +160,8 @@ $color-primary: #282560;
 
         li {
           margin-right: 1.3rem;
+          cursor: pointer;
+
           a {
             color: $color-primary;
             font-weight: 600;
@@ -291,6 +293,7 @@ $color-primary: #282560;
         line-height: 2.5rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         padding-right: 6vw;
+        cursor: pointer;
       }
     }
   }
