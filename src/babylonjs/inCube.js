@@ -31,7 +31,7 @@ export default class {
     camera.position.y = 51.886;
     camera.position.z = -249,27.409;
 
-    camera.target = new BABYLON.Vector3(-26.4,-3.6,-61.2);
+    camera.target = new BABYLON.Vector3(-100,-3.6,-61.2);
 
     camera.ellipsoid = new BABYLON.Vector3(1, 1, 1);
     scene.collisionsEnabled = true;
