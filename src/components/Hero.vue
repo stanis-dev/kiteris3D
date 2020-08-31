@@ -10,8 +10,8 @@
 
 <script>
 export default {
-  name: 'Hero',
-};
+  name: 'Hero'
+}
 </script>
 
 <style lang="scss">
@@ -34,6 +34,7 @@ $color-primary: #282560;
 
   .hero-copy {
     position: absolute;
+
     font-family: 'Roboto', sans-serif;
     width: 65%;
     max-width: 500px;
@@ -45,6 +46,7 @@ $color-primary: #282560;
     margin-left: 5vw;
     margin-top: 5vw;
     top: 20%;
+    left: 5%;
   }
 
   .action-call {
@@ -62,6 +64,7 @@ $color-primary: #282560;
     font-weight: 300;
     letter-spacing: 3px;
     bottom: 10%;
+    left: 10%;
   }
 }
 </style>
