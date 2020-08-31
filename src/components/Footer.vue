@@ -2,35 +2,36 @@
   <footer>
     <h3>Grupo Kiteris</h3>
 
-    <div class="img">
-      <img
-        class="ppm-img"
-        src="../../public/img/ppm_img_logotip-1.jpg"
-        alt="ppm coachers"
-      />
+    <div class="group-logos">
+      <div class="img">
+        <img
+          class="ppm-img"
+          src="../../public/img/ppm_img_logotip-1.jpg"
+          alt="ppm coachers"
+        />
+      </div>
+      <div class="img">
+        <img
+          class="bravalab-img"
+          src="../../public/img/bravalab.jpg"
+          alt="bravalab"
+        />
+      </div>
+      <div class="img">
+        <img
+          class="kiteris-data-img"
+          src="../../public/img/kiteris_data-1.jpg"
+          alt="kiteris data"
+        />
+      </div>
+      <div class="img">
+        <img
+          class="kiteris-3d"
+          src="../../public/img/kiteris3d.png"
+          alt="kiteris 3d"
+        />
+      </div>
     </div>
-    <div class="img">
-      <img
-        class="bravalab-img"
-        src="../../public/img/bravalab.jpg"
-        alt="bravalab"
-      />
-    </div>
-    <div class="img">
-      <img
-        class="kiteris-data-img"
-        src="../../public/img/kiteris_data-1.jpg"
-        alt="kiteris data"
-      />
-    </div>
-    <div class="img">
-      <img
-        class="kiteris-3d"
-        src="../../public/img/kiteris3d.png"
-        alt="kiteris 3d"
-      />
-    </div>
-
     <div class="sedes">
       <img
         class="kiteris-img"
@@ -94,20 +95,41 @@ footer {
   align-items: center;
   margin-top: 2rem;
 
-  .kiteris-data-img,
-  .kiteris-3d {
-    margin-top: -20px;
+  h3 {
+    margin-bottom: 1.5rem;
   }
 
-  .img {
+  .group-logos {
     width: 100%;
-    text-align: center;
-    margin-top: 1.5rem;
-  }
-  img {
-    height: 70px;
-    padding: 0 20px;
-    max-width: 370px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .ppm-img {
+      margin-top: -15px;
+    }
+
+    .bravalab-img {
+      margin-bottom: -55px;
+    }
+
+    /* .kiteris-data-img,
+    .kiteris-3d {
+      margin-top: -20px;
+    } */
+
+    .img {
+      width: 100%;
+      text-align: center;
+      margin-top: 1.5rem;
+      max-width: 370px;
+      height: 70px;
+    }
+    img {
+      height: 70px;
+      padding: 0 20px;
+    }
   }
 
   .sedes {
