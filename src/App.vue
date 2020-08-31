@@ -2,7 +2,7 @@
   <div class="app">
     <Navbar />
     <Hero />
-    <Section2 />
+    <PropuestaValor />
     <Footer />
   </div>
 </template>
@@ -12,14 +12,14 @@ import inCube from './babylonjs/inCube'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
-import Section2 from './components/Section2'
+import PropuestaValor from './components/PropuestaValor'
 
 export default {
   components: {
     Navbar,
     Hero,
     Footer,
-    Section2
+    PropuestaValor
   },
   mounted() {
     const inCubeS = new inCube()
