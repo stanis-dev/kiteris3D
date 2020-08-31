@@ -26,6 +26,13 @@ export default class {
     camera.alpha = 24.26162698175595;
     camera.beta = 1.3309757193555238;
     camera.radius = 349.98020621966697;
+
+    camera.position.x = 253.409;
+    camera.position.y = 51.886;
+    camera.position.z = -249,27.409;
+
+    camera.target = new BABYLON.Vector3(-26.4,-3.6,-61.2);
+
     camera.ellipsoid = new BABYLON.Vector3(1, 1, 1);
     scene.collisionsEnabled = true;
     camera.checkCollisions = true;
