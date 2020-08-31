@@ -98,7 +98,7 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    min-width: 450px;
+    min-width: 320px;
     min-height: 800px;
   }
 }

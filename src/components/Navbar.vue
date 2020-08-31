@@ -1,10 +1,9 @@
 <template>
-  <header class="navbar-top">
+  <header class="navbar-top" v-scroll="handleScroll">
     <a class="logo-link" href="#">
-      <img class="logo" src="../../public/img/kiteris3d.png" alt="kiteris"
+      <img class="logo" :src="logo" alt="kiteris"
     /></a>
 
-    <!--  TODO make the whole <li> clickable -->
     <div class="navbar-menu">
       <div class="desktop-menu">
         <ul>
@@ -88,6 +87,9 @@
         </li>
       </ul>
     </nav>
+    <a @click="scrollToTop" class="arrow-up" v-if="showScrollToTopArrow"
+      ><i class="fas fa-arrow-up"></i
+    ></a>
   </header>
 </template>
 
@@ -98,13 +100,17 @@ export default {
     return {
       mobileMenuIsOpen: false,
       subMenuIsOpen: false,
-      mobileMenuHeight: '0px'
+      mobileMenuHeight: '0px',
+      textColor: '#282560',
+      logo: '/img/kiteris3d.png',
+      showScrollToTopArrow: false
     }
   },
   methods: {
     toggleMobileMenu() {
       if (this.mobileMenuIsOpen) {
         this.mobileMenuIsOpen = false
+        this.subMenuIsOpen = false
         this.mobileMenuHeight = '0px'
       } else {
         this.mobileMenuIsOpen = true
@@ -119,14 +125,43 @@ export default {
         this.subMenuIsOpen = true
         this.mobileMenuHeight = '470px'
       }
+    },
+
+    handleScroll(evt, el) {
+      /* console.log(evt, el) */
+
+      if (window.scrollY > 100) {
+        el.classList.add('on-scroll')
+        this.textColor = 'white'
+        this.logo = '/img/logo-white.png'
+        this.showScrollToTopArrow = true
+      } else {
+        el.classList.remove('on-scroll')
+        this.textColor = '#282560'
+        ;(this.logo = '/img/kiteris3d.png'), (this.showScrollToTopArrow = false)
+      }
+    },
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   },
-  watch: {}
+  directives: {
+    scroll(el, binding) {
+      let f = function(evt) {
+        if (binding.value(evt, el)) {
+          window.removeEventListener('scroll', f)
+        }
+      }
+      window.addEventListener('scroll', f)
+    }
+  }
 }
 </script>
 
 <style lang="scss">
-$color-primary: #282560;
+$corporate-purple: #282560;
+$text-color: $corporate-purple;
+
 .navbar-top {
   padding: 0 4%;
   display: flex;
@@ -135,7 +170,63 @@ $color-primary: #282560;
   z-index: 9999;
   background-color: white;
   width: 100%;
-  box-shadow: 0 20px 40px rgba($color-primary, 0.6);
+  box-shadow: 0 20px 40px rgba($corporate-purple, 0.6);
+  transition: all 0.5s;
+
+  /* SCROLL UP ARROW */
+  .arrow-up {
+    position: fixed;
+    cursor: pointer;
+    top: 91%;
+    right: 6vw;
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
+    background-color: grey;
+    text-align: center;
+    border-radius: 100%;
+
+    i {
+      /* color: $corporate-purple; */
+      line-height: 30px;
+      color: $corporate-purple;
+      font-size: 1.5rem;
+    }
+  }
+
+  /* NAVBAR COLOR CHANGE ON SCROLL DOWN */
+  &.on-scroll {
+    background-color: #262261;
+
+    .navbar-menu {
+      .desktop-menu {
+        ul {
+          li {
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+
+      .menu-expand-btn {
+        .burger,
+        .burger::after,
+        .burger::before {
+          background: white;
+        }
+      }
+    }
+
+    .linked-in-logo {
+      .linked-in {
+        border-left: 1px white solid;
+        i {
+          color: white !important;
+        }
+      }
+    }
+  }
 
   .logo-link {
     .logo {
@@ -160,7 +251,7 @@ $color-primary: #282560;
           cursor: pointer;
 
           a {
-            color: $color-primary;
+            color: $text-color;
             font-weight: 600;
           }
         }
@@ -182,9 +273,8 @@ $color-primary: #282560;
         width: 30px;
         height: 3px;
         border-radius: 5px;
-        background: $color-primary;
+        background: $text-color;
         transition: all 0.5s ease-in-out;
-        box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
 
         &::before,
         &::after {
@@ -193,7 +283,7 @@ $color-primary: #282560;
           width: 30px;
           height: 3px;
           transition: all 0.5s ease-in-out;
-          background: $color-primary;
+          background: $text-color;
         }
 
         &::before {
@@ -226,7 +316,7 @@ $color-primary: #282560;
       display: none;
       width: 40px;
       height: 30px;
-      border-left: 1px $color-primary solid;
+      border-left: 1px $text-color solid;
       margin-left: 0.6rem;
 
       .linked-in {
@@ -234,7 +324,7 @@ $color-primary: #282560;
         padding-left: 1.1rem;
 
         i {
-          color: $color-primary;
+          color: $text-color;
         }
       }
     }

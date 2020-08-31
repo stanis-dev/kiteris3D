@@ -57,6 +57,14 @@ body {
   font-family: 'Roboto', sans-serif;
   color: white;
   line-height: 1.4;
+
+  #app {
+    width: 100%;
+  }
+
+  .app {
+    width: 100%;
+  }
 }
 
 /* TABLET MEDIA QUERIES */
