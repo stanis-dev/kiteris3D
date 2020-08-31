@@ -2,6 +2,7 @@
   <div class="app">
     <Navbar />
     <Hero />
+    <OurVision />
     <PropuestaValor />
     <Footer />
   </div>
@@ -13,13 +14,15 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
 import PropuestaValor from './components/PropuestaValor'
+import OurVision from './components/OurVision'
 
 export default {
   components: {
     Navbar,
     Hero,
     Footer,
-    PropuestaValor
+    PropuestaValor,
+    OurVision
   },
   mounted() {
     const inCubeS = new inCube()
