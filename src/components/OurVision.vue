@@ -53,7 +53,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 5vw;
 
     h3 {
       font-family: 'Montserrat', sans-serif;
@@ -69,6 +68,7 @@ section {
       align-items: center;
       max-width: 100%;
       border-bottom: 1px solid rgba($color: $color-primary, $alpha: 0.3);
+      margin: 0 5vw;
 
       i {
         font-size: 2rem;
