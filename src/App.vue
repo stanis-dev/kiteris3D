@@ -2,28 +2,30 @@
   <div class="app">
     <Navbar />
     <Hero />
-    <section class="section-2"><h3>Hello!</h3></section>
+    <Section2 />
     <Footer />
   </div>
 </template>
 
 <script>
-import inCube from './babylonjs/inCube';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Footer from './components/Footer';
+import inCube from './babylonjs/inCube'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Footer from './components/Footer'
+import Section2 from './components/Section2'
 
 export default {
   components: {
     Navbar,
     Hero,
     Footer,
+    Section2
   },
   mounted() {
-    const inCubeS = new inCube();
-    inCubeS.start();
-  },
-};
+    const inCubeS = new inCube()
+    inCubeS.start()
+  }
+}
 </script>
 
 <style lang="scss">
@@ -52,13 +54,6 @@ body {
   font-family: 'Roboto', sans-serif;
   color: white;
   line-height: 1.4;
-
-  /* HERO SECTION */
-
-  .section-2 {
-    min-height: 70vh;
-    background-color: yellowgreen;
-  }
 }
 
 /* TABLET MEDIA QUERIES */

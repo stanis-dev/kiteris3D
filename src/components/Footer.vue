@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer>
     <h3>Grupo Kiteris</h3>
 
     <div class="img">
@@ -23,15 +23,14 @@
         alt="kiteris data"
       />
     </div>
-    <div class="img">
+
+    <div class="sedes">
       <img
         class="kiteris-img"
         src="../../public/img/HoritzontalBi.png"
         alt="kiteris logo"
       />
-    </div>
 
-    <div class="sedes">
       <div class="sede">
         <h4>Barcelona</h4>
 
@@ -71,7 +70,7 @@
       <span> · </span>
       <a> Política de cookies</a>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -79,7 +78,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-.footer {
+footer {
   color: rgb(51, 50, 50);
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -88,26 +87,30 @@ export default {}
   align-items: center;
   margin-top: 2rem;
 
-  .ppm-img,
-  .bravalab-img {
-    margin-top: 2.3rem;
+  .kiteris-data-img {
+    margin-top: -20px;
   }
 
   .img {
     width: 100%;
     text-align: center;
+    margin-top: 1.5rem;
   }
   img {
-    width: 100%;
+    height: 70px;
     padding: 0 20px;
-    max-width: 400px;
+    max-width: 370px;
   }
 
   .sedes {
-    width: 100%;
+    width: 80%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    border-top: 1px double black;
+    margin-top: 1rem;
 
     .sede {
       min-width: 300px;
@@ -127,7 +130,7 @@ export default {}
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 100%;
     text-align: center;
   }
@@ -140,7 +143,7 @@ export default {}
     margin-top: 1.5rem;
     border-top: 1px black solid;
     width: 80%;
-    max-width: 1000px;
+    max-width: 1200px;
     text-align: center;
     font-size: 12px;
     font-family: 'Roboto' sans-serif;

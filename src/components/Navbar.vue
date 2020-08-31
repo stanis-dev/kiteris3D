@@ -1,10 +1,7 @@
 <template>
-  <nav class="navbar-top">
+  <header class="navbar-top">
     <a class="logo-link" href="#">
-      <img
-        class="logo"
-        src="https://www.kiteris.com/wp-content/uploads/2020/01/HoritzontalBi.png"
-        alt="kiteris"
+      <img class="logo" src="../../public/img/kiteris3d.png" alt="kiteris"
     /></a>
 
     <!--  TODO make the whole <li> clickable -->
@@ -48,7 +45,7 @@
         ></a>
       </div>
     </div>
-    <div
+    <nav
       :style="{ height: mobileMenuHeight }"
       :class="{ open: mobileMenuIsOpen }"
       class="collapse-toggle"
@@ -90,8 +87,8 @@
           </a>
         </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 </template>
 
 <script>
