@@ -23,6 +23,13 @@
         alt="kiteris data"
       />
     </div>
+    <div class="img">
+      <img
+        class="kiteris-3d"
+        src="../../public/img/kiteris3d.png"
+        alt="kiteris 3d"
+      />
+    </div>
 
     <div class="sedes">
       <img
@@ -87,7 +94,8 @@ footer {
   align-items: center;
   margin-top: 2rem;
 
-  .kiteris-data-img {
+  .kiteris-data-img,
+  .kiteris-3d {
     margin-top: -20px;
   }
 
