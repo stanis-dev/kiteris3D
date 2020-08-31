@@ -95,6 +95,10 @@ footer {
   align-items: center;
   margin-top: 2rem;
 
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+
   .group-logos {
     width: 100%;
     display: flex;
@@ -103,11 +107,11 @@ footer {
     justify-content: center;
 
     .ppm-img {
-      margin-top: -25px;
+      margin-top: -15px;
     }
 
     .bravalab-img {
-      margin-bottom: -13px;
+      margin-bottom: -55px;
     }
 
     /* .kiteris-data-img,
