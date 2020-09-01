@@ -1,8 +1,8 @@
 <template>
   <header class="navbar-top" v-scroll="handleScroll">
-    <a class="logo-link" href="#">
+    <router-link to="/" class="logo-link">
       <img class="logo" :src="logo" alt="kiteris"
-    /></a>
+    /></router-link>
 
     <div class="navbar-menu">
       <div class="desktop-menu">
@@ -182,9 +182,15 @@ $text-color: $corporate-purple;
     width: 30px;
     height: 30px;
     z-index: 9999;
-    background-color: grey;
+    background-color: lightgrey;
     text-align: center;
     border-radius: 100%;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      background-color: grey;
+    }
 
     i {
       /* color: $corporate-purple; */

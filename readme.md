@@ -18,5 +18,5 @@ npm run build
 ### TODO:
 
 1. Fix links
-2. NavBar color change on scroll
-3. Scroll to top button
+2. Arrow up animation
+3. Desktop submenus

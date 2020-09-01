@@ -50,6 +50,7 @@ $color-primary: #282560;
   }
 
   .action-call {
+    text-align: center;
     position: absolute;
     padding: 1rem 1.2rem;
     border-radius: 15px;
@@ -57,12 +58,12 @@ $color-primary: #282560;
     background-color: $color-primary;
     width: 250px;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     box-shadow: 0 20px 40px rgba(23, 23, 23, 0.95);
     cursor: pointer;
-    font-weight: 300;
-    letter-spacing: 3px;
+    font-weight: 400;
+    letter-spacing: 2px;
     bottom: 10%;
     left: 10%;
   }

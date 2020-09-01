@@ -24,7 +24,7 @@ $corporate-purple: #282560;
   h2 {
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    font-weight: 600;
   }
 }
 </style>
