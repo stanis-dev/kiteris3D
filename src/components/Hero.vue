@@ -4,7 +4,7 @@
     <h4 class="hero-copy">
       Expertos en soluciones de Visualización 3D en tu Web
     </h4>
-    <button class="action-call">Ver demos</button>
+    <router-link to="/demo" class="action-call">Ver demos</router-link>
   </section>
 </template>
 
