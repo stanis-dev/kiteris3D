@@ -5,6 +5,7 @@
       Expertos en soluciones de Visualización 3D en tu Web
     </h4>
     <router-link to="/demo" class="action-call">Ver demos</router-link>
+    <a class="action-call contact">Contactar</a>
   </section>
 </template>
 
@@ -64,8 +65,13 @@ $color-primary: #282560;
     cursor: pointer;
     font-weight: 400;
     letter-spacing: 2px;
-    bottom: 10%;
+    bottom: 20%;
     left: 10%;
+
+    &.contact {
+      bottom: 10%;
+      left: 10%;
+    }
   }
 }
 </style>

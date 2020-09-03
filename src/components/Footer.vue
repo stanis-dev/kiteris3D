@@ -134,7 +134,6 @@ footer {
 
   .sedes {
     width: 80%;
-    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,7 +172,7 @@ footer {
     margin-top: 1.5rem;
     border-top: 1px black solid;
     width: 80%;
-    max-width: 1200px;
+
     text-align: center;
     font-size: 12px;
     font-family: 'Roboto' sans-serif;
