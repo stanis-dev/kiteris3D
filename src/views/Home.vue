@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero />
+    <Hero v-on:scroll-to-form="scrollToForm" />
     <OurVision />
     <PropuestaValor />
     <Form />
@@ -25,6 +25,13 @@ export default {
   mounted() {
     const inCubeS = new inCube()
     inCubeS.start()
+  },
+  methods: {
+    scrollToForm() {
+      console.log('done')
+      const el = document.querySelector('.container')
+      el.scrollIntoView({ block: 'center', behavior: 'smooth' })
+    }
   }
 }
 </script>

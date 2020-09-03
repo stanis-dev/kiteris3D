@@ -172,7 +172,6 @@ footer {
     margin-top: 1.5rem;
     border-top: 1px black solid;
     width: 80%;
-
     text-align: center;
     font-size: 12px;
     font-family: 'Roboto' sans-serif;

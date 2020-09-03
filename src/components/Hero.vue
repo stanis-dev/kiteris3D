@@ -5,13 +5,18 @@
       Expertos en soluciones de Visualización 3D en tu Web
     </h4>
     <router-link to="/demo" class="action-call">Ver demos</router-link>
-    <a class="action-call contact">Contactar</a>
+    <a class="action-call contact" @click="onGoToForm">Contactar</a>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Hero'
+  name: 'Hero',
+  methods: {
+    onGoToForm() {
+      this.$emit('scroll-to-form')
+    }
+  }
 }
 </script>
 
