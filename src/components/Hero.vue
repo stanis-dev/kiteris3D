@@ -51,6 +51,7 @@ $color-primary: #282560;
     min-width: 100%;
     min-height: 100%;
     position: absolute;
+    padding-top: 85px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
