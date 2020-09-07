@@ -1,6 +1,8 @@
 <template>
   <section class="hero">
-    <canvas class="canvas" id="renderCanvas"> </canvas>
+    <video class="canvas" id="renderCanvas" autoplay muted loop>
+      <source src="/videos/jacket.mp4" type="video/mp4" />
+    </video>
     <h4 class="hero-copy">
       Expertos en soluciones de Visualización 3D en tu Web
     </h4>
@@ -10,18 +12,18 @@
 </template>
 
 <script>
-import { onMounted } from 'vue'
+/* import { onMounted } from 'vue'
 
-import inCube from '../babylonjs/inCube'
+import inCube from '../babylonjs/inCube' */
 
 export default {
   name: 'Hero',
 
   setup() {
-    onMounted(() => {
+    /* onMounted(() => {
       const inCubeS = new inCube()
       inCubeS.start()
-    })
+    }) */
   },
   methods: {
     onGoToForm() {
@@ -35,18 +37,30 @@ export default {
 $color-primary: #282560;
 .hero {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  /* display: flex;
+  flex-direction: column; */
+  /*  align-items: center; */
   padding-top: 5.2rem;
   position: relative;
+  background-color: #8bc540;
 
   /* 3D CANVAS */
   #renderCanvas {
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: auto; */
+    /* width: auto; */
+    /* overflow: hidden; */
     pointer-events: none;
-    background: linear-gradient(90deg, black, black);
+    /* margin: 0 auto; */
+
+    /*  background: linear-gradient(90deg, black, black); */
   }
 
   .hero-copy {

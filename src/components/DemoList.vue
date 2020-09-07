@@ -61,11 +61,19 @@ section {
 
     li {
       .demo-item-container {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+          transition: all 0.3s ease-in-out;
+        }
+
         height: 300px;
         width: 300px;
         background: grey;
         position: relative;
         z-index: 2;
+        cursor: pointer;
 
         h3 {
           text-align: start;

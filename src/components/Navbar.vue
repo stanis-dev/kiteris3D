@@ -170,7 +170,6 @@ $text-color: $corporate-purple;
   z-index: 9999;
   background-color: white;
   width: 100%;
-  box-shadow: 0 20px 40px rgba($corporate-purple, 0.6);
   transition: all 0.5s;
 
   /* SCROLL UP ARROW */
