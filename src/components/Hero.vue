@@ -10,8 +10,19 @@
 </template>
 
 <script>
+import { onMounted } from 'vue'
+
+import inCube from '../babylonjs/inCube'
+
 export default {
   name: 'Hero',
+
+  setup() {
+    onMounted(() => {
+      const inCubeS = new inCube()
+      inCubeS.start()
+    })
+  },
   methods: {
     onGoToForm() {
       this.$emit('scroll-to-form')
