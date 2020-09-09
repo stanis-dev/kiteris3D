@@ -21,7 +21,7 @@
         <i class="fas fa-code"></i>
         <p>
           Nos encargamos de adaptar el UI contenedor de 3D a la estética del
-          diseño. Utilizes la tecnología que utilices.
+          diseño. Utilices la tecnología que utilices.
         </p>
       </div>
       <div class="point">

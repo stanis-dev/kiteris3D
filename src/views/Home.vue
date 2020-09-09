@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero v-on:scroll-to-form="scrollToForm" />
+    <Hero3 />
     <OurVision />
     <PropuestaValor />
     <Form />
@@ -8,14 +8,14 @@
 </template>
 
 <script>
-import Hero from '../components/Hero'
+import Hero3 from '../components/Hero3'
 import PropuestaValor from '../components/PropuestaValor'
 import OurVision from '../components/OurVision'
 import Form from '../components/Form'
 
 export default {
   components: {
-    Hero,
+    Hero3,
     PropuestaValor,
     OurVision,
     Form

@@ -1,7 +1,7 @@
 <template>
   <section class="hero">
     <video class="canvas" id="renderCanvas" autoplay muted loop>
-      <source src="/videos/jacket.mp4" type="video/mp4" />
+      <source src="/videos/car.mp4" type="video/mp4" />
     </video>
     <h4 class="hero-copy">
       Expertos en soluciones de Visualización 3D en tu Web
