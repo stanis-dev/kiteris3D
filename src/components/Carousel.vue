@@ -127,7 +127,7 @@ $color-primary: #282560;
   .counter-container {
     position: absolute;
     bottom: 5vh;
-    left: calc(50% - 45px);
+    left: calc(50% - 90px);
 
     .counter {
       background: rgba($color: #fff, $alpha: 0.4);
