@@ -7,25 +7,45 @@
     <div class="navbar-menu">
       <div class="desktop-menu">
         <ul>
-          <li><a href="#">empresa</a></li>
+          <li><a href="https://www.kiteris.com/presentacion/">empresa</a></li>
           <li class="has-submenu">
             <a href="#">servicios</a>
             <ul class="desktop-submenu">
-              <li><a href="">Acompañamiento estratégico y organizativo</a></li>
-              <li><a href="">Servicios tecnológicos</a></li>
-              <li><a href="">Gestión y optimización de proyectos</a></li>
+              <li>
+                <a
+                  href="https://www.kiteris.com/acompanamiento-estrategico-y-organizativo/"
+                  >Acompañamiento estratégico y organizativo</a
+                >
+              </li>
+              <li>
+                <a href="https://www.kiteris.com/servicios-tecnologicos/"
+                  >Servicios tecnológicos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.kiteris.com/gestion-y-optimizacion-de-proyectos/"
+                  >Gestión y optimización de proyectos</a
+                >
+              </li>
             </ul>
           </li>
-          <li><a href="#">kiteris data</a></li>
+          <li>
+            <a href="https://www.kiteris.com/kiteris-data/">kiteris data</a>
+          </li>
           <li class="has-submenu">
             <a href="#">kiteris 3D</a>
             <ul class="desktop-submenu">
               <li><a href="">Demos</a></li>
             </ul>
           </li>
-          <li><a href="#">valores kiteris</a></li>
-          <li><a href="#">empleos</a></li>
-          <li><a href="#">contacto</a></li>
+          <li>
+            <a href="https://www.kiteris.com/valores-de-kiteris/"
+              >valores kiteris</a
+            >
+          </li>
+          <li><a href="https://www.kiteris.com/empleos/">empleos</a></li>
+          <li><a href="https://www.kiteris.com/contacto/">contacto</a></li>
           <li>
             <a href="#">
               <img
@@ -62,23 +82,43 @@
       class="collapse-toggle"
     >
       <ul>
-        <li><a href="#">empresa</a></li>
+        <li><a href="https://www.kiteris.com/presentacion/">empresa</a></li>
         <li>
           <a class="sub-menu-expand-btn" @click="toggleSubMenu()"
             >servicios <i class="fas fa-angle-down"></i
           ></a>
 
           <ul :class="{ open: subMenuIsOpen }" class="submenu-collapse-toggle">
-            <li><a href="#">Acompañamiento estratégico y organizativo</a></li>
-            <li><a href="#">Servicios tecnológicos</a></li>
-            <li><a href="#">Gestión y optimización de proyectos</a></li>
+            <li>
+              <a
+                href="https://www.kiteris.com/acompanamiento-estrategico-y-organizativo/"
+                >Acompañamiento estratégico y organizativo</a
+              >
+            </li>
+            <li>
+              <a href="https://www.kiteris.com/servicios-tecnologicos/"
+                >Servicios tecnológicos</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.kiteris.com/gestion-y-optimizacion-de-proyectos/"
+                >Gestión y optimización de proyectos</a
+              >
+            </li>
           </ul>
         </li>
-        <li><a href="#">kiteris data</a></li>
+        <li>
+          <a href="https://www.kiteris.com/kiteris-data/">kiteris data</a>
+        </li>
         <li><a href="#">kiteris 3d</a></li>
-        <li><a href="#">valores de kiteris</a></li>
-        <li><a href="#">empleos</a></li>
-        <li><a href="#">contacto</a></li>
+        <li>
+          <a href="https://www.kiteris.com/valores-de-kiteris/"
+            >valores de kiteris</a
+          >
+        </li>
+        <li><a href="https://www.kiteris.com/empleos/">empleos</a></li>
+        <li><a href="https://www.kiteris.com/contacto/">contacto</a></li>
         <li>
           <a href="#">
             <img
