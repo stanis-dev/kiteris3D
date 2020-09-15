@@ -21,7 +21,7 @@
         <i class="fas fa-code"></i>
         <p>
           Nos encargamos de adaptar el UI contenedor de 3D a la estética del
-          diseño. Utilizes la tecnología que utilices.
+          diseño. Utilices la tecnología que utilices.
         </p>
       </div>
       <div class="point">
@@ -58,12 +58,14 @@ section {
   min-height: 700px;
   justify-content: center;
   align-items: center;
-  max-width: 1900px;
+  width: 100%;
 
   .wrapper-left {
     width: 100%;
     display: flex;
     flex-direction: column;
+    flex: 1 0 50%;
+    padding: 0 5vw;
 
     h3 {
       font-family: 'Montserrat', sans-serif;
@@ -78,7 +80,7 @@ section {
       display: flex;
       align-items: center;
       width: 100%;
-      padding: 0 3rem;
+      border-bottom: 1px solid rgba($color: $color-primary, $alpha: 0.3);
 
       i {
         font-size: 2rem;
@@ -93,14 +95,12 @@ section {
         margin-top: 2rem;
         line-height: 1.6rem;
         padding-bottom: 1.5rem;
-        border-bottom: 1px solid rgba($color: $color-primary, $alpha: 0.3);
+
         display: block;
       }
 
       &:last-child {
-        p {
-          border-bottom: none;
-        }
+        border-bottom: none;
       }
     }
   }

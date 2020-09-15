@@ -49,6 +49,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+$corporate-purple: #282560;
 section {
   margin: 100px 0;
 
@@ -61,15 +62,25 @@ section {
 
     li {
       .demo-item-container {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+          transition: all 0.3s ease-in-out;
+        }
+
         height: 300px;
         width: 300px;
-        background: grey;
+        /* background: grey; */
+        border: 10px solid $corporate-purple;
         position: relative;
         z-index: 2;
+        cursor: pointer;
+        border-radius: 20px;
 
         h3 {
           text-align: start;
-          color: white;
+          color: $corporate-purple;
           margin-left: 1rem;
           padding-top: 1rem;
           font-family: 'Raleway', sans-serif;

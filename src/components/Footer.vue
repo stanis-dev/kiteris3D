@@ -72,11 +72,15 @@
       <span> · </span>
       <p>Project Management & IT Services</p>
       <span> · </span>
-      <a> Aviso Legal</a>
+      <a href="https://www.kiteris.com/aviso-legal/"> Aviso Legal</a>
       <span> · </span>
-      <a> Política de privacidad</a>
+      <a href="https://www.kiteris.com/politica-privacidad/">
+        Política de privacidad</a
+      >
       <span> · </span>
-      <a> Política de cookies</a>
+      <a href="https://www.kiteris.com/politica-cookies/">
+        Política de cookies</a
+      >
     </div>
   </footer>
 </template>
@@ -134,7 +138,6 @@ footer {
 
   .sedes {
     width: 80%;
-    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,13 +176,17 @@ footer {
     margin-top: 1.5rem;
     border-top: 1px black solid;
     width: 80%;
-    max-width: 1200px;
     text-align: center;
     font-size: 12px;
     font-family: 'Roboto' sans-serif;
     font-weight: 600;
     padding: 2rem 0;
     line-height: 1.4rem;
+
+    a {
+      color: #23205f;
+      font-weight: bold;
+    }
 
     & * {
       margin-right: 1rem;

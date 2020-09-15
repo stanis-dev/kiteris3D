@@ -11,6 +11,10 @@ export default class {
   }
 
   loadMap() {
+    if (!this.canvas) {
+      this.canvas = document.getElementById('renderCanvas')
+    }
+
     var scene = new BABYLON.Scene(this.engine)
     scene.clearColor = new BABYLON.Color3(0.2, 0.2, 0.2)
     var camera = new BABYLON.ArcRotateCamera(

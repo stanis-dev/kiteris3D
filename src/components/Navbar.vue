@@ -7,13 +7,45 @@
     <div class="navbar-menu">
       <div class="desktop-menu">
         <ul>
-          <li><a href="#">empresa</a></li>
-          <li><a href="#">servicios</a></li>
-          <li><a href="#">kiteris data</a></li>
-          <li><a href="#">kiteris 3D</a></li>
-          <li><a href="#">valores kiteris</a></li>
-          <li><a href="#">empleos</a></li>
-          <li><a href="#">contacto</a></li>
+          <li><a href="https://www.kiteris.com/presentacion/">empresa</a></li>
+          <li class="has-submenu">
+            <a href="#">servicios</a>
+            <ul class="desktop-submenu">
+              <li>
+                <a
+                  href="https://www.kiteris.com/acompanamiento-estrategico-y-organizativo/"
+                  >Acompañamiento estratégico y organizativo</a
+                >
+              </li>
+              <li>
+                <a href="https://www.kiteris.com/servicios-tecnologicos/"
+                  >Servicios tecnológicos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.kiteris.com/gestion-y-optimizacion-de-proyectos/"
+                  >Gestión y optimización de proyectos</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.kiteris.com/kiteris-data/">kiteris data</a>
+          </li>
+          <li class="has-submenu">
+            <a href="#">kiteris 3D</a>
+            <ul class="desktop-submenu">
+              <li><a href="">Demos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.kiteris.com/valores-de-kiteris/"
+              >valores kiteris</a
+            >
+          </li>
+          <li><a href="https://www.kiteris.com/empleos/">empleos</a></li>
+          <li><a href="https://www.kiteris.com/contacto/">contacto</a></li>
           <li>
             <a href="#">
               <img
@@ -50,23 +82,43 @@
       class="collapse-toggle"
     >
       <ul>
-        <li><a href="#">empresa</a></li>
+        <li><a href="https://www.kiteris.com/presentacion/">empresa</a></li>
         <li>
           <a class="sub-menu-expand-btn" @click="toggleSubMenu()"
             >servicios <i class="fas fa-angle-down"></i
           ></a>
 
           <ul :class="{ open: subMenuIsOpen }" class="submenu-collapse-toggle">
-            <li><a href="#">Acompañamiento estratégico y organizativo</a></li>
-            <li><a href="#">Servicios tecnológicos</a></li>
-            <li><a href="#">Gestión y optimización de proyectos</a></li>
+            <li>
+              <a
+                href="https://www.kiteris.com/acompanamiento-estrategico-y-organizativo/"
+                >Acompañamiento estratégico y organizativo</a
+              >
+            </li>
+            <li>
+              <a href="https://www.kiteris.com/servicios-tecnologicos/"
+                >Servicios tecnológicos</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.kiteris.com/gestion-y-optimizacion-de-proyectos/"
+                >Gestión y optimización de proyectos</a
+              >
+            </li>
           </ul>
         </li>
-        <li><a href="#">kiteris data</a></li>
+        <li>
+          <a href="https://www.kiteris.com/kiteris-data/">kiteris data</a>
+        </li>
         <li><a href="#">kiteris 3d</a></li>
-        <li><a href="#">valores de kiteris</a></li>
-        <li><a href="#">empleos</a></li>
-        <li><a href="#">contacto</a></li>
+        <li>
+          <a href="https://www.kiteris.com/valores-de-kiteris/"
+            >valores de kiteris</a
+          >
+        </li>
+        <li><a href="https://www.kiteris.com/empleos/">empleos</a></li>
+        <li><a href="https://www.kiteris.com/contacto/">contacto</a></li>
         <li>
           <a href="#">
             <img
@@ -170,7 +222,6 @@ $text-color: $corporate-purple;
   z-index: 9999;
   background-color: white;
   width: 100%;
-  box-shadow: 0 20px 40px rgba($corporate-purple, 0.6);
   transition: all 0.5s;
 
   /* SCROLL UP ARROW */
@@ -255,6 +306,62 @@ $text-color: $corporate-purple;
         li {
           margin-right: 1.3rem;
           cursor: pointer;
+          line-height: 83px;
+          height: 83px;
+
+          &.has-submenu {
+            position: relative;
+
+            &:hover {
+              ul.desktop-submenu {
+                transition: all 0.25s ease-in-out;
+                opacity: 1;
+              }
+            }
+
+            ul.desktop-submenu {
+              transition: all 0.25s ease-in-out;
+              opacity: 0;
+              position: absolute;
+              background: black;
+              top: 80px;
+              left: 0;
+              display: flex;
+              flex-direction: column;
+              background: rgba(35, 35, 35, 1);
+              padding: 4px 0 15px;
+              min-width: 225px;
+              line-height: 1.43;
+
+              li {
+                padding-left: 28px;
+                padding-right: 20px;
+                font-size: 12px;
+                line-height: 1.43;
+                margin-right: 0;
+                height: auto;
+                margin-top: 4px;
+
+                &:hover {
+                  a {
+                    color: white;
+                    transition: all 0.25s ease-in-out;
+                    transform: translateX(5px);
+                  }
+                }
+
+                a {
+                  display: block;
+                  color: #9d9d9d;
+                  font-size: 12px;
+                  font-weight: 500;
+                  line-height: 1.43;
+                  padding: 9px 0 7px 0;
+                  transition: all 0.25s ease-in-out;
+                }
+              }
+            }
+          }
 
           a {
             color: $text-color;

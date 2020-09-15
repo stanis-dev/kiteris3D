@@ -1,6 +1,8 @@
 <template>
   <section class="container">
-    <h2>Experiencias innovadoras para cada producto</h2>
+    <div class="title-container">
+      <h2>Experiencias innovadoras para cada producto</h2>
+    </div>
     <DemoList />
   </section>
 </template>
@@ -18,8 +20,22 @@ export default {
 $corporate-purple: #282560;
 .container {
   text-align: center;
-  padding-top: 150px;
+  padding-top: 83px;
   color: $corporate-purple;
+
+  .title-container {
+    height: 30vh;
+    background-color: $corporate-purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+  }
 
   h2 {
     font-size: 2.5rem;

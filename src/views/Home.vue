@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero />
+    <Hero3 />
     <OurVision />
     <PropuestaValor />
     <Form />
@@ -8,23 +8,24 @@
 </template>
 
 <script>
-import Hero from '../components/Hero'
+import Hero3 from '../components/Hero3'
 import PropuestaValor from '../components/PropuestaValor'
 import OurVision from '../components/OurVision'
 import Form from '../components/Form'
 
-import inCube from '../babylonjs/inCube'
-
 export default {
   components: {
-    Hero,
+    Hero3,
     PropuestaValor,
     OurVision,
     Form
   },
-  mounted() {
-    const inCubeS = new inCube()
-    inCubeS.start()
+  methods: {
+    scrollToForm() {
+      console.log('done')
+      const el = document.querySelector('.container')
+      el.scrollIntoView({ block: 'center', behavior: 'smooth' })
+    }
   }
 }
 </script>
