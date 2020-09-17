@@ -24,14 +24,13 @@ $corporate-purple: #282560;
   color: $corporate-purple;
 
   .title-container {
-    height: 30vh;
-    background-color: $corporate-purple;
+    height: 15vh;
+    color: $corporate-purple;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     h2 {
-      color: white;
       text-transform: uppercase;
       font-weight: 100;
     }

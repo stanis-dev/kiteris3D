@@ -1,47 +1,46 @@
 <template>
-  <section>
-    <ul>
-      <li>
-        <div class="demo-item-container">
-          <h3>VINOS</h3>
-          <img src="../../public/img/demos/vino.png" alt="botella de vino" />
-        </div>
-      </li>
-      <li>
-        <div class="demo-item-container">
-          <h3>TEXTIL</h3>
-          <img src="../../public/img/demos/textil.png" alt="vestido" />
-        </div>
-      </li>
-      <li>
-        <div class="demo-item-container">
-          <h3>SUPERMERCADOS</h3>
-          <img src="../../public/img/demos/arroz.png" alt="arroz" />
-        </div>
-      </li>
-      <li>
-        <div class="demo-item-container">
-          <h3>ARQUITECTURA</h3>
-          <img src="../../public/img/demos/casa.png" alt="casa" />
-        </div>
-      </li>
-      <li>
-        <div class="demo-item-container">
-          <h3>INDUSTRIAL</h3>
-          <img
-            src="../../public/img/demos/limpiafondos.png"
-            alt="maquina limpiafondos"
-          />
-        </div>
-      </li>
-      <li>
-        <div class="demo-item-container">
-          <h3>AUTOMOCIÓN</h3>
-          <img src="../../public/img/demos/car.png" alt="coche" />
-        </div>
-      </li>
-    </ul>
-  </section>
+  <div class="demos-container">
+    <div class="demo-item">
+      <h4>Rolex</h4>
+      <img src="/img/demos/reloj.png" alt="reloj rolex" />
+    </div>
+    <div class="demo-item">
+      <h4>Cava Marevia</h4>
+      <img src="/img/demos/botella.png" alt="botella cava marevia" />
+    </div>
+    <div class="demo-item">
+      <h4>Huawei</h4>
+      <img src="/img/demos/movil.png" alt="render movil" />
+    </div>
+    <div class="demo-item">
+      <h4>Crema</h4>
+      <img
+        style="width: 100%; height: auto; top: 110px"
+        src="/img/demos/crema.png"
+        alt="render crema"
+      />
+    </div>
+    <div class="demo-item">
+      <h4>Chaqueta</h4>
+      <img src="/img/demos/textil.png" alt="textil" />
+    </div>
+    <div class="demo-item">
+      <h4>Sofa</h4>
+      <img src="/img/demos/sofa.png" alt="render sofa" />
+    </div>
+    <div class="demo-item">
+      <h4>Dientes...?</h4>
+      <img src="/img/demos/dientes.png" alt="parida" />
+    </div>
+    <div class="demo-item">
+      <h4>Audi</h4>
+      <img
+        style="width: 100%; height: auto; top: 110px"
+        src="/img/demos/car.png"
+        alt="coche"
+      />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -49,54 +48,37 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-$corporate-purple: #282560;
-section {
-  margin: 100px 0;
+.demos-container {
+  padding: 5vh 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1900px;
+  justify-content: center;
 
-  ul {
-    display: flex;
-    gap: 10vw;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 4vw;
+  .demo-item {
+    background-color: #f2f5f8;
+    /* background-color: yellow; */
+    height: 250px;
+    width: 400px;
+    position: relative;
+    z-index: 2;
 
-    li {
-      .demo-item-container {
-        transition: all 0.3s ease-in-out;
-        &:hover {
-          transform: scale(1.05);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-          transition: all 0.3s ease-in-out;
-        }
+    h4 {
+      font-size: 2rem;
+      text-align: start;
+      margin-left: 2rem;
+      padding-top: 2rem;
+      z-index: 2;
+    }
 
-        height: 300px;
-        width: 300px;
-        /* background: grey; */
-        border: 10px solid $corporate-purple;
-        position: relative;
-        z-index: 2;
-        cursor: pointer;
-        border-radius: 20px;
-
-        h3 {
-          text-align: start;
-          color: $corporate-purple;
-          margin-left: 1rem;
-          padding-top: 1rem;
-          font-family: 'Raleway', sans-serif;
-          font-size: 1.8rem;
-          z-index: 2000;
-        }
-
-        img {
-          height: 100%;
-          width: auto;
-          position: absolute;
-          bottom: -30px;
-          right: -10px;
-          z-index: -1;
-        }
-      }
+    img {
+      position: absolute;
+      right: 0;
+      top: 30px;
+      height: 100%;
+      width: auto;
+      z-index: -1;
     }
   }
 }
