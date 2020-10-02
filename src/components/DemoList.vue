@@ -1,102 +1,141 @@
 <template>
-  <section>
-    <ul>
-      <li>
-        <div class="demo-item-container">
-          <h3>VINOS</h3>
-          <img src="../../public/img/demos/vino.png" alt="botella de vino" />
-        </div>
-      </li>
-      <li>
-        <div class="demo-item-container">
-          <h3>TEXTIL</h3>
-          <img src="../../public/img/demos/textil.png" alt="vestido" />
-        </div>
-      </li>
-      <li>
-        <div class="demo-item-container">
-          <h3>SUPERMERCADOS</h3>
-          <img src="../../public/img/demos/arroz.png" alt="arroz" />
-        </div>
-      </li>
-      <li>
-        <div class="demo-item-container">
-          <h3>ARQUITECTURA</h3>
-          <img src="../../public/img/demos/casa.png" alt="casa" />
-        </div>
-      </li>
-      <li>
-        <div class="demo-item-container">
-          <h3>INDUSTRIAL</h3>
-          <img
-            src="../../public/img/demos/limpiafondos.png"
-            alt="maquina limpiafondos"
-          />
-        </div>
-      </li>
-      <li>
-        <div class="demo-item-container">
-          <h3>AUTOMOCIÓN</h3>
-          <img src="../../public/img/demos/car.png" alt="coche" />
-        </div>
-      </li>
-    </ul>
-  </section>
+  <div class="demos-container">
+    <a href="https://kiteris.com/3d/reloj/">
+      <div class="demo-item">
+        <h4>Rolex</h4>
+        <img src="/img/demos/reloj.png" alt="reloj rolex" />
+      </div>
+    </a>
+
+    <a href="https://kiteris.com/3d/botella/">
+      <div class="demo-item">
+        <h4>Cava Marevia</h4>
+        <img
+          src="/img/demos/botella.png"
+          alt="botella cava marevia"
+          style="margin-right: 2rem; transform: rotate(10deg)"
+        />
+      </div>
+    </a>
+    <a href="https://kiteris.com/3d/movil/">
+      <div class="demo-item">
+        <h4>Huawei</h4>
+        <img src="/img/demos/movil.png" alt="render movil" />
+      </div>
+    </a>
+    <a href="https://kiteris.com/3d/cosmetico/">
+      <div class="demo-item">
+        <h4>Crema</h4>
+        <img
+          style="width: 100%; height: auto; top: 100px; margin-right: -20px"
+          src="/img/demos/crema.png"
+          alt="render crema"
+        />
+      </div>
+    </a>
+    <a href="https://kiteris.com/3d/ropa/">
+      <div class="demo-item">
+        <h4>Chaqueta</h4>
+        <img src="/img/demos/textil.png" alt="textil" />
+      </div>
+    </a>
+
+    <a href="https://kiteris.com/3d/sofa/">
+      <div class="demo-item">
+        <h4>Sofa</h4>
+        <img
+          src="/img/demos/sofa.png"
+          alt="render sofa"
+          style="margin-top: 25px;"
+        />
+      </div>
+    </a>
+
+    <a href="https://kiteris.com/3d/dientes/">
+      <div class="demo-item">
+        <h4>Dientes...?</h4>
+        <img
+          src="/img/demos/dientes.png"
+          alt="parida"
+          style="margin-right: -25px; margin-top: 20px;"
+        />
+      </div>
+    </a>
+
+    <a href="https://kiteris.com/3d/audi/">
+      <div class="demo-item">
+        <h4>Audi</h4>
+        <img
+          style="width: 100%; height: auto; top: 110px"
+          src="/img/demos/car.png"
+          alt="coche"
+        />
+      </div>
+    </a>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  /* methods: {
+    goTo() {
+      this.$r
+    }
+  } */
+}
 </script>
 
 <style lang="scss" scoped>
-$corporate-purple: #282560;
-section {
-  margin: 100px 0;
+a {
+  color: #282560;
+}
+.demos-container {
+  margin: auto;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1900px;
+  justify-content: center;
 
-  ul {
-    display: flex;
-    gap: 10vw;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 4vw;
+  .demo-item {
+    background-color: #f2f5f8;
+    /* background-color: yellow; */
+    height: 250px;
+    width: 400px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 20px 40px rgba($color: #262261, $alpha: 0.4);
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
 
-    li {
-      .demo-item-container {
-        transition: all 0.3s ease-in-out;
-        &:hover {
-          transform: scale(1.05);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-          transition: all 0.3s ease-in-out;
-        }
+    &:hover {
+      transform: scale(1.025);
+      transition: all 0.2s ease-in-out;
+    }
 
-        height: 300px;
-        width: 300px;
-        /* background: grey; */
-        border: 10px solid $corporate-purple;
-        position: relative;
-        z-index: 2;
-        cursor: pointer;
-        border-radius: 20px;
+    a {
+      color: #282560;
+      width: 100%;
+      height: 100%;
+    }
 
-        h3 {
-          text-align: start;
-          color: $corporate-purple;
-          margin-left: 1rem;
-          padding-top: 1rem;
-          font-family: 'Raleway', sans-serif;
-          font-size: 1.8rem;
-          z-index: 2000;
-        }
+    h4 {
+      position: absolute;
+      font-size: 2rem;
+      text-align: start;
+      margin-left: 2rem;
+      padding-top: 2rem;
+      z-index: 2222;
+    }
 
-        img {
-          height: 100%;
-          width: auto;
-          position: absolute;
-          bottom: -30px;
-          right: -10px;
-          z-index: -1;
-        }
-      }
+    img {
+      position: absolute;
+      right: 0;
+      top: 30px;
+      height: 100%;
+      width: auto;
+      z-index: -1;
     }
   }
 }
