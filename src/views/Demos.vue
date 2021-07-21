@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div class="title-container">
-      <h2>Experiencias innovadoras para cada producto</h2>
+      <h2> Experiencias innovadoras para cada producto</h2>
     </div>
     <DemoList />
   </section>
@@ -9,6 +9,9 @@
 
 <script>
 import DemoList from '../components/DemoList'
+
+
+
 export default {
   components: {
     DemoList

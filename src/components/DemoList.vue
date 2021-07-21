@@ -3,24 +3,20 @@
     <a href="https://kiteris.com/3d/reloj/">
       <div class="demo-item">
         <h4>Rolex</h4>
-        <img src="/img/demos/reloj.png" alt="reloj rolex" />
+        <img src="/3d/img/demos/reloj.png" alt="reloj rolex" />
       </div>
     </a>
 
-    <a href="https://kiteris.com/3d/botella/">
+    <a href="https://kiteris.com/3d/gafas/">
       <div class="demo-item">
-        <h4>Cava Marevia</h4>
-        <img
-          src="/img/demos/botella.png"
-          alt="botella cava marevia"
-          style="margin-right: 2rem; transform: rotate(10deg)"
-        />
+        <h4>Gafas</h4>
+        <img src="/3d/img/demos/gafas.png" alt="render gafas" />
       </div>
     </a>
     <a href="https://kiteris.com/3d/movil/">
       <div class="demo-item">
         <h4>Huawei</h4>
-        <img src="/img/demos/movil.png" alt="render movil" />
+        <img src="/3d/img/demos/movil.png" alt="render movil" />
       </div>
     </a>
     <a href="https://kiteris.com/3d/cosmetico/">
@@ -28,7 +24,7 @@
         <h4>Crema</h4>
         <img
           style="width: 100%; height: auto; top: 100px; margin-right: -20px"
-          src="/img/demos/crema.png"
+          src="/3d/img/demos/crema.png"
           alt="render crema"
         />
       </div>
@@ -36,7 +32,7 @@
     <a href="https://kiteris.com/3d/ropa/">
       <div class="demo-item">
         <h4>Chaqueta</h4>
-        <img src="/img/demos/textil.png" alt="textil" />
+        <img src="/3d/img/demos/textil.png" alt="textil" />
       </div>
     </a>
 
@@ -44,7 +40,7 @@
       <div class="demo-item">
         <h4>Sofa</h4>
         <img
-          src="/img/demos/sofa.png"
+          src="/3d/img/demos/sofa.png"
           alt="render sofa"
           style="margin-top: 25px;"
         />
@@ -53,23 +49,41 @@
 
     <a href="https://kiteris.com/3d/dientes/">
       <div class="demo-item">
-        <h4>Dientes...?</h4>
+        <h4>Dentadura</h4>
         <img
-          src="/img/demos/dientes.png"
+          src="/3d/img/demos/dientes.png"
           alt="parida"
           style="margin-right: -25px; margin-top: 20px;"
         />
       </div>
     </a>
 
-    <a href="https://kiteris.com/3d/audi/">
+    <a href="https://kiteris.com/3d/bmw/">
       <div class="demo-item">
-        <h4>Audi</h4>
+        <h4>BMW</h4>
         <img
-          style="width: 100%; height: auto; top: 110px"
-          src="/img/demos/car.png"
+          style="width: 100%; height: auto; top: 80px; margin-right: -25px"
+          src="/3d/img/demos/bmw.png"
           alt="coche"
         />
+      </div>
+    </a>
+
+    <a href="https://www.luxcoverbygalindo.com/">
+      <div class="demo-item">
+        <h4>Galindo</h4>
+        <img
+          style="width: 70%; height: auto; top: 110px; margin-right: 15%"
+          src="/3d/img/demos/galindoLogo.png"
+          alt="coche"
+        />
+      </div>
+    </a>
+
+    <a href="https://www.prestocustom.com/">
+      <div class="demo-item">
+        <h4>Presto Custom</h4>
+        <img style="" src="/3d/img/demos/prestoLogo.png" alt="coche" />
       </div>
     </a>
   </div>
@@ -91,7 +105,7 @@ a {
 }
 .demos-container {
   margin: auto;
-  padding: 5vh 5vw;
+  padding: 15vh 5vw;
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;

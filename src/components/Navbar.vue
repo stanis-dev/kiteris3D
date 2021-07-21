@@ -34,7 +34,7 @@
             <a href="https://www.kiteris.com/kiteris-data/">kiteris data</a>
           </li>
           <li class="has-submenu">
-            <a href="#">kiteris 3D</a>
+            <a href="https://www.kiteris.com/kiteris-3d/">kiteris 3D</a>
             <ul class="desktop-submenu">
               <li><a href="">Demos</a></li>
             </ul>
@@ -111,7 +111,7 @@
         <li>
           <a href="https://www.kiteris.com/kiteris-data/">kiteris data</a>
         </li>
-        <li><a href="#">kiteris 3d</a></li>
+        <li><a href="https://www.kiteris.com/kiteris-3d/">kiteris 3d</a></li>
         <li>
           <a href="https://www.kiteris.com/valores-de-kiteris/"
             >valores de kiteris</a
@@ -154,7 +154,7 @@ export default {
       subMenuIsOpen: false,
       mobileMenuHeight: '0px',
       textColor: '#282560',
-      logo: '/img/kiteris3d.png',
+      logo: '/3d/img/kiteris3d.png',
       showScrollToTopArrow: false
     }
   },
@@ -185,12 +185,12 @@ export default {
       if (window.scrollY > 100) {
         el.classList.add('on-scroll')
         this.textColor = 'white'
-        this.logo = '/img/logo-white.png'
+        this.logo = '/3d/img/logo-white.png'
         this.showScrollToTopArrow = true
       } else {
         el.classList.remove('on-scroll')
         this.textColor = '#282560'
-        ;(this.logo = '/img/kiteris3d.png'), (this.showScrollToTopArrow = false)
+        ;(this.logo = '/3d/img/kiteris3d.png'), (this.showScrollToTopArrow = false)
       }
     },
     scrollToTop() {

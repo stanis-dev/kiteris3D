@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\"",
     "start": "node server.js"
   },
   "dependencies": {
@@ -16,10 +17,12 @@
     "fbx2gltf": "^0.9.7-p1",
     "serve-static": "^1.14.1",
     "vue": "^3.0.0-0",
+    "vue-i18n": "^9.1.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^3.5.1"
   },
   "devDependencies": {
+    "@intlify/vue-i18n-loader": "^2.1.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "^4.5.4",
@@ -32,9 +35,13 @@
     "eslint-plugin-vue": "^7.0.0-0",
     "node-sass": "^4.14.1",
     "prettier": "^1.19.1",
-    "sass-loader": "^10.0.2"
+    "sass-loader": "^10.0.2",
+    "vue-cli-plugin-i18n": "~2.1.1"
   },
   "engines": {
     "node": "12.x"
+  },
+  "volta": {
+    "node": "12.22.1"
   }
 }

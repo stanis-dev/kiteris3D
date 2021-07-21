@@ -106,7 +106,7 @@ section {
   }
 
   .wrapper-right {
-    background-image: url('../../public/img/section-2-img.jpg');
+    background-image: url('../../public/3d/img/section-2-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

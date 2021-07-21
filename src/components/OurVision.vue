@@ -93,7 +93,7 @@ section {
   }
 
   .wrapper-left {
-    background-image: url('../../public/img/eye.jpg');
+    background-image: url('../../public/3d/img/eye.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

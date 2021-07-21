@@ -1,19 +1,21 @@
 <template>
   <div class="app">
     <Navbar />
-    <router-view></router-view>
+    <DemoList />
     <Footer />
   </div>
 </template>
 
 <script>
+import DemoList from './components/DemoList'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 export default {
   components: {
     Navbar,
-    Footer
+    Footer,
+    DemoList
   }
 }
 </script>

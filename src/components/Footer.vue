@@ -6,28 +6,28 @@
       <div class="img">
         <img
           class="ppm-img"
-          src="../../public/img/ppm_img_logotip-1.jpg"
+          src="/3d/img/ppm_img_logotip-1.jpg"
           alt="ppm coachers"
         />
       </div>
       <div class="img">
         <img
           class="bravalab-img"
-          src="../../public/img/bravalab.jpg"
+          src="/3d/img/bravalab.jpg"
           alt="bravalab"
         />
       </div>
       <div class="img">
         <img
           class="kiteris-data-img"
-          src="../../public/img/kiteris_data-1.jpg"
+          src="/3d/img/kiteris_data-1.jpg"
           alt="kiteris data"
         />
       </div>
       <div class="img">
         <img
           class="kiteris-3d"
-          src="../../public/img/kiteris3d.png"
+          src="/3d/img/kiteris3d.png"
           alt="kiteris 3d"
         />
       </div>
@@ -35,7 +35,7 @@
     <div class="sedes">
       <img
         class="kiteris-img"
-        src="../../public/img/HoritzontalBi.png"
+        src="../../public/3d/img/HoritzontalBi.png"
         alt="kiteris logo"
       />
 
