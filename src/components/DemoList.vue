@@ -1,25 +1,25 @@
 <template>
   <div class="demos-container">
-    <a href="https://kiteris.com/3d/reloj/">
+    <a href="https://kiteris.com/3d/watch/">
       <div class="demo-item">
         <h4>Rolex</h4>
         <img src="/3d/3d/img/demos/reloj.png" alt="reloj rolex" />
       </div>
     </a>
 
-    <a href="https://kiteris.com/3d/gafas/">
+    <a href="https://kiteris.com/3d/sunglasses/">
       <div class="demo-item">
         <h4>Gafas - Sunglasses</h4>
         <img src="/3d/3d/img/demos/gafas.png" alt="render gafas" />
       </div>
     </a>
-    <a href="https://kiteris.com/3d/movil/">
+    <a href="https://kiteris.com/3d/mobile/">
       <div class="demo-item">
         <h4>Huawei</h4>
         <img src="/3d/3d/img/demos/movil.png" alt="render movil" />
       </div>
     </a>
-    <a href="https://kiteris.com/3d/cosmetico/">
+    <a href="https://kiteris.com/3d/cream/">
       <div class="demo-item">
         <h4>Crema - Cream</h4>
         <img
@@ -29,7 +29,7 @@
         />
       </div>
     </a>
-    <a href="https://kiteris.com/3d/ropa/">
+    <a href="https://kiteris.com/3d/jacket/">
       <div class="demo-item">
         <h4>Chaqueta - Jacket</h4>
         <img src="/3d/3d/img/demos/textil.png" alt="textil" />
@@ -47,7 +47,7 @@
       </div>
     </a>
 
-    <a href="https://kiteris.com/3d/dientes/">
+    <a href="https://kiteris.com/3d/teeth/">
       <div class="demo-item">
         <h4>Dentadura - Teeth</h4>
         <img
@@ -69,7 +69,7 @@
       </div>
     </a>
 
-    <a href="https://www.luxcoverbygalindo.com/">
+    <a href="https://www.luxcoverbygalindo.com/visor-3.html?data=4604100&colec=Aroha">
       <div class="demo-item">
         <h4>Galindo</h4>
         <img
@@ -80,7 +80,7 @@
       </div>
     </a>
 
-    <a href="https://www.prestocustom.com/">
+    <a href="https://www.prestocustom.com/visor-3.html?data=79260&colec=Elec">
       <div class="demo-item">
         <h4>Presto Custom</h4>
         <img style="" src="/3d/3d/img/demos/prestoLogo.png" alt="coche" />
