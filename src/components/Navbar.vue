@@ -154,7 +154,7 @@ export default {
       subMenuIsOpen: false,
       mobileMenuHeight: '0px',
       textColor: '#282560',
-      logo: '/3d/img/kiteris3d.png',
+      logo: '/3d/3d/img/kiteris3d.png',
       showScrollToTopArrow: false
     }
   },
@@ -185,12 +185,12 @@ export default {
       if (window.scrollY > 100) {
         el.classList.add('on-scroll')
         this.textColor = 'white'
-        this.logo = '/3d/img/logo-white.png'
+        this.logo = '/3d/3d/img/logo-white.png'
         this.showScrollToTopArrow = true
       } else {
         el.classList.remove('on-scroll')
         this.textColor = '#282560'
-        ;(this.logo = '/3d/img/kiteris3d.png'), (this.showScrollToTopArrow = false)
+        ;(this.logo = '/3d/3d/img/kiteris3d.png'), (this.showScrollToTopArrow = false)
       }
     },
     scrollToTop() {

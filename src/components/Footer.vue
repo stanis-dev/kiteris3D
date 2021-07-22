@@ -6,28 +6,28 @@
       <div class="img">
         <img
           class="ppm-img"
-          src="/3d/img/ppm_img_logotip-1.jpg"
+          src="/3d/3d/img/ppm_img_logotip-1.jpg"
           alt="ppm coachers"
         />
       </div>
       <div class="img">
         <img
           class="bravalab-img"
-          src="/3d/img/bravalab.jpg"
+          src="/3d/3d/img/bravalab.jpg"
           alt="bravalab"
         />
       </div>
       <div class="img">
         <img
           class="kiteris-data-img"
-          src="/3d/img/kiteris_data-1.jpg"
+          src="/3d/3d/img/kiteris_data-1.jpg"
           alt="kiteris data"
         />
       </div>
       <div class="img">
         <img
           class="kiteris-3d"
-          src="/3d/img/kiteris3d.png"
+          src="/3d/3d/img/kiteris3d.png"
           alt="kiteris 3d"
         />
       </div>
