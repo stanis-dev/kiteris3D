@@ -12,13 +12,6 @@
       </div>
       <div class="img">
         <img
-          class="bravalab-img"
-          src="/3d/3d/img/bravalab.jpg"
-          alt="bravalab"
-        />
-      </div>
-      <div class="img">
-        <img
           class="kiteris-data-img"
           src="/3d/3d/img/kiteris_data-1.jpg"
           alt="kiteris data"
